@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "compodoc": "npx compodoc -p tsconfig.json -s -w --theme readthedocs --hideGenerator --customFavicon src/favicon.ico --customLogo src/assets/images/logo/icon_w.png",

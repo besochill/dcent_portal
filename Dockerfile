@@ -14,6 +14,6 @@ RUN npm run build --base-href
 
 FROM nginx:latest
 
-COPY --from=build /app/dist/frontend /usr/share/nginx/html
+COPY --from=build /app/dist/portal /usr/share/nginx/html
 
 EXPOSE 80
