@@ -1,0 +1,28 @@
+<mat-toolbar>
+  <mat-toolbar-row class="container">
+    <span>
+      <img routerLink="/" src="assets/images/logo/icon_w.png" alt="logo" class="w-12" />
+    </span>
+    <span class="spacer"></span>
+    <div *ngIf="$loggedIn()">
+      <button mat-button routerLink="/dashboard">Dashboard</button>
+      <button mat-button routerLink="/profile">Profile</button>
+      <button mat-button (click)="$logout()">Logout</button>
+    </div>
+    <div *ngIf="!$loggedIn()">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>login</mat-icon>
+      </button>
+      <mat-menu  #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon svgIcon="mat_outline:login"></mat-icon>
+          <span routerLink="/login">Login</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon svgIcon="heroicons_outline:finger-print"></mat-icon>
+          <span routerLink="/register">Register</span>
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

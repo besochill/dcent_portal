@@ -1,0 +1,82 @@
+<div class="container max-w-sm">
+  <div class="w-full sm:w-auto py-8 px-4 sm:p-12 sm:rounded-2xl sm:shadow sm:bg-card">
+    <mat-card class="mx-auto sm:mx-0 items-center">
+      <mat-card-header>
+        <img src="assets/images/logo/icon.png" alt="Logo" class="w-32 h-32 rounded-full">
+      </mat-card-header>
+      <mat-card-title class="text-2xl font-bold">Authorised Access Only</mat-card-title>
+      <mat-card-subtitle class="text-gray-500">Please register your credentials to continue</mat-card-subtitle>
+      <mat-card-subtitle class="text-gray-500">Already have an account? <a routerLink="/login">Login</a></mat-card-subtitle>
+      <mat-card-content>
+        <form class="mt-8"
+              [formGroup]="registerForm"
+              #registerNgForm="ngForm">
+            <mat-form-field class="w-full" appearance="fill">
+              <mat-label>Username</mat-label>
+              <input id="username"
+                     matInput
+                     [formControlName]="'username'">
+              <mat-icon svgIcon="heroicons_solid:hashtag" matSuffix style="color:#ff3c00;"></mat-icon>
+            </mat-form-field>
+          <mat-form-field class="w-full" appearance="fill">
+            <mat-label>Firstname</mat-label>
+            <input id="firstname"
+                   matInput
+                   [formControlName]="'firstname'">
+            <mat-icon svgIcon="heroicons_outline:pencil-alt" matSuffix style="color:#ff3c00;"></mat-icon>
+          </mat-form-field>
+          <mat-form-field class="w-full" appearance="fill">
+            <mat-label>Lastname</mat-label>
+            <input id="lastname"
+                   matInput
+                   [formControlName]="'lastname'">
+            <mat-icon svgIcon="heroicons_outline:pencil-alt" matSuffix style="color:#ff3c00;"></mat-icon>
+          </mat-form-field>
+          <mat-form-field class="w-full">
+            <mat-label>Email address</mat-label>
+            <input
+              id="email"
+              matInput
+              [formControlName]="'email'">
+            <mat-icon svgIcon="mat_outline:email" matSuffix style="color:#ff3c00;"></mat-icon>
+          </mat-form-field>
+            <mat-form-field appearance="fill" class="flex-form w-full">
+              <mat-label>Password</mat-label>
+              <input id="password"
+                     matInput
+                     type="password"
+                     [formControlName]="'password'"
+                     #password>
+              <mat-icon svgIcon="heroicons_outline:eye" matSuffix style="color:#ff3c00;"></mat-icon>
+            </mat-form-field>
+          <div class="inline-flex items-end w-full mt-1.5">
+            <mat-checkbox
+              class="-ml-2"
+              [color]="'primary'"
+              [formControlName]="'agreements'">
+              <span>I agree with</span>
+              <a
+                class="ml-1 text-primary-500 hover:underline"
+                [routerLink]="['./']">Terms
+              </a>
+              <span>and</span>
+              <a
+                class="ml-1 text-primary-500 hover:underline"
+                [routerLink]="['./']">Privacy Policy
+              </a>
+            </mat-checkbox>
+          </div>
+          <button mat-flat-button class="bg-orange-700 w-full mt-6"
+                  [color]="'primary'"
+                  (click)="register()"
+                  [disabled]="!registerForm.valid">
+                    <span *ngIf="!registerForm.disabled">
+                        Register
+                    </span>
+            <mat-icon>login</mat-icon>
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

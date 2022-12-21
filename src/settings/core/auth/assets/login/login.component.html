@@ -1,0 +1,55 @@
+<div class="container max-w-sm">
+  <div class="w-full sm:w-auto py-8 px-4 sm:p-12 sm:rounded-2xl sm:shadow sm:bg-card">
+  <mat-card class="mx-auto sm:mx-0 items-center">
+      <mat-card-header>
+        <img src="assets/images/logo/icon.png" alt="Logo" class="w-32 h-32 rounded-full">
+      </mat-card-header>
+      <mat-card-title class="text-2xl font-bold">Authorised Access Only</mat-card-title>
+      <mat-card-subtitle class="text-gray-500">Please enter your credentials to continue</mat-card-subtitle>
+      <mat-card-subtitle class="text-gray-500">Need an account? <a routerLink="/register">Register</a></mat-card-subtitle>
+      <mat-card-content>
+        <form class="mt-8"
+              [formGroup]="loginForm"
+              #loginNgForm="ngForm">
+            <mat-form-field class="w-full" appearance="fill">
+              <mat-label>Username</mat-label>
+              <input id="username"
+                     matInput
+                     [formControlName]="'username'">
+              <mat-icon matSuffix style="color:#ff3c00;">person_pin</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="flex-form w-full">
+              <mat-label>Password</mat-label>
+              <input id="password"
+                     matInput
+                     type="password"
+                     [formControlName]="'password'"
+                     #passwordField>
+              <mat-icon matSuffix style="color:#ff3c00;">lock</mat-icon>
+            </mat-form-field>
+          <div class="inline-flex items-center justify-between w-full mt-1.5 pb-2">
+            <mat-checkbox
+              class="-ml-2"
+              [color]="'primary'"
+              [formControlName]="'rememberMe'">
+              Remember me
+            </mat-checkbox>
+            <a
+              class="text-md font-medium text-primary-500 hover:underline"
+              [routerLink]="['/forgot']">Forgot password?
+            </a>
+          </div>
+          <button mat-flat-button class="bg-orange-700 w-full mt-6"
+                  [color]="'primary'"
+                  (click)="login()"
+                  [disabled]="!loginForm.valid">
+                    <span *ngIf="!loginForm.disabled">
+                        Login
+                    </span>
+            <mat-icon>login</mat-icon>
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

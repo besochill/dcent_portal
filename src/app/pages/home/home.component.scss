@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+  .social {
+    color: #FF3C00;
+  }
+  mat-card {
+    margin: 10px;
+    box-shadow: none;
+    .mat-form-field {
+      .textarea {
+        color: #fff;
+      }
+    }
+  }
+}
