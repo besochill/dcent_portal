@@ -8,6 +8,7 @@ import { appRouting } from './app-routing';
 import { CoreModule } from '../settings/core/core.module'
 import { ThemeModule } from '../theme/theme.module'
 import { LayoutModule } from '../settings/layout/layout.module'
+import { SidenavService } from "../settings/layout/assets/sidebar/sidebar.service";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { LayoutModule } from '../settings/layout/layout.module'
     ThemeModule,
     LayoutModule,
   ],
-  providers: [],
+  providers: [SidenavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

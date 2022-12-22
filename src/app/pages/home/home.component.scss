@@ -2,12 +2,26 @@
   display: block;
   height: 100%;
   width: 100%;
+  .centered {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  button {
+    margin: 0;
+    padding: 0;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
   .social {
     color: #FF3C00;
   }
   mat-card {
     margin: 10px;
     box-shadow: none;
+    background-color: transparent;
     .mat-form-field {
       .textarea {
         color: #fff;
@@ -15,3 +29,24 @@
     }
   }
 }
+
+.container {
+  height: calc(100vh - 65px);
+  .content {
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 16px 16px 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    h1 {
+      color: lightgray;
+      font-size: 4rem;
+    }
+    strong {
+      color: #FF3C00;
+    }
+  }
+}
+

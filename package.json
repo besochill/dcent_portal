@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4300 -o",
     "build": "ng build --base-href",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -26,6 +26,7 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "rxjs": "~7.5.0",
+    "simple-icons": "^8.1.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

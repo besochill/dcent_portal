@@ -1,8 +1,9 @@
 import { Route } from '@angular/router';
 import { LayoutComponent } from '../settings/layout/layout.component'
+import {AuthGuard} from "../settings/core/auth/guards/auth.guard";
 
 export const appRouting: Route[] = [
-  { path: '', redirectTo: 'register', pathMatch: 'full' },
+  { path: 'login', redirectTo: '', pathMatch: 'full' },
   { path: '',
     component: LayoutComponent,
     children: [
@@ -20,5 +21,13 @@ export const appRouting: Route[] = [
       // { path: 'login', loadChildren: () => import('../settings/core/auth/assets/login/login.module').then(m => m.LoginModule) },
       { path: 'register', loadChildren: () => import('../settings/core/auth/assets/register/register.module').then(m => m.RegisterModule) },
     ]
+  },
+  {
+    path: '',
+    canActivate: [AuthGuard],
+    component: LayoutComponent,
+    children: [
+      { path: 'profile', loadChildren: () => import('./pages/user/user.module').then(m => m.UserModule) },
+    ],
   }
 ];

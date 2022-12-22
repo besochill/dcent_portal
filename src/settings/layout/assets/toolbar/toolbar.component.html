@@ -1,13 +1,22 @@
 <mat-toolbar>
   <mat-toolbar-row class="container">
-    <span>
-      <img routerLink="/" src="assets/images/logo/icon_w.png" alt="logo" class="w-12" />
-    </span>
+    <a routerLink="/" class="logo-link">
+      <img src="assets/images/logo/icon_w.png" alt="Logo" class="w-12 pr-2"/>
+    </a>
     <span class="spacer"></span>
     <div *ngIf="$loggedIn()">
-      <button mat-button routerLink="/dashboard">Dashboard</button>
-      <button mat-button routerLink="/profile">Profile</button>
-      <button mat-button (click)="$logout()">Logout</button>
+      <button mat-button routerLink="/dashboard" matTooltip="Dashboard">
+        <mat-icon svgIcon="mat_solid:dashboard"></mat-icon>
+      </button>
+      <button mat-button routerLink="/dashboard" matTooltip="Fullscreen">
+        <mat-icon svgIcon="mat_solid:fullscreen"></mat-icon>
+      </button>
+      <button mat-button routerLink="/profile" matTooltip="Profile">
+        <mat-icon svgIcon="mat_solid:person"></mat-icon>
+      </button>
+      <button mat-button (click)="$logout()" matTooltip="Logout">
+        <mat-icon svgIcon="mat_solid:logout"></mat-icon>
+      </button>
     </div>
     <div *ngIf="!$loggedIn()">
       <button mat-icon-button [matMenuTriggerFor]="menu">
@@ -15,7 +24,7 @@
       </button>
       <mat-menu  #menu="matMenu">
         <button mat-menu-item>
-          <mat-icon svgIcon="mat_outline:login"></mat-icon>
+          <mat-icon svgIcon="mat_outline:login" matTooltip="Disabled"></mat-icon>
           <span routerLink="/login">Login</span>
         </button>
         <button mat-menu-item>

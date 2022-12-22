@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module'
 import { IconModule } from './icon/icon.module'
 import { AuthModule } from './auth/auth.module'
-import { UserModule } from './user/user.module'
+import {UserService} from "./user/user.service";
 
 @NgModule({
   declarations: [],
@@ -10,14 +10,17 @@ import { UserModule } from './user/user.module'
     SharedModule,
     IconModule,
     AuthModule,
-    UserModule,
+  ],
+  exports: [
+    IconModule,
+    AuthModule,
   ]
 })
 export class CoreModule {
   static forRoot() {
     return {
       ngModule: CoreModule,
-      providers: []
+      providers: [UserService]
     }
   }
 }

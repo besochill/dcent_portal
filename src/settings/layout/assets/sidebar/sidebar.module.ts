@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router'
   imports: [
     SharedModule,
     RouterModule,
-  ]
+  ],
+  providers: [],
 })
 export class SidebarModule { }

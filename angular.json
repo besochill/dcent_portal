@@ -25,9 +25,33 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "allowedCommonJsDependencies": [
+              "simplebar",
+              "highlight.js",
+              "faker",
+              "showdown",
+              "core-js",
+              "dom-set",
+              "dom-plane",
+              "angular-calendar/date-adapters/date-fns",
+              "calendar-utils/date-adapters/date-fns",
+              "@mattlewis92/dom-autoscroller",
+              "apexcharts",
+              "can-use-dom",
+              "lodash.debounce",
+              "lodash.memoize",
+              "lodash.throttle",
+              "luxon",
+              "quill"
+            ],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/@material-design-icons/svg",
+                "output": "assets/img/icons/material-design-icons/"
+              }
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",

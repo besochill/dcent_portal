@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://api.dcent.technology/v1',
+  apiUrl: 'http://localhost:3001/v1',
 };
