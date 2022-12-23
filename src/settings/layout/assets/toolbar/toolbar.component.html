@@ -3,10 +3,19 @@
     <a routerLink="/" class="logo-link">
       <img src="assets/images/logo/icon_w.png" alt="Logo" class="w-12 pr-2"/>
     </a>
+    <div>
+      <button mat-button routerLink="/market">Shop</button>
+      <button mat-button>Live</button>
+      <button mat-button routerLink="/docs">Guides</button>
+      <button mat-button routerLink="/legal">Legal</button>
+    </div>
     <span class="spacer"></span>
     <div *ngIf="$loggedIn()">
       <button mat-button routerLink="/dashboard" matTooltip="Dashboard">
         <mat-icon svgIcon="mat_solid:dashboard"></mat-icon>
+      </button>
+      <button mat-button routerLink="/members" matTooltip="Members">
+        <mat-icon svgIcon="mat_solid:group"></mat-icon>
       </button>
       <button mat-button routerLink="/dashboard" matTooltip="Fullscreen">
         <mat-icon svgIcon="mat_solid:fullscreen"></mat-icon>

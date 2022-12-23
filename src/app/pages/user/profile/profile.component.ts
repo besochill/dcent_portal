@@ -12,4 +12,8 @@ export class ProfileComponent {
               private authService: AuthService,) { }
 
   ngOnInit() {}
+
+  profileEdit() {
+
+  }
 }
