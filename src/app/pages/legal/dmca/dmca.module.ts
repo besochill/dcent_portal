@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { DmcaComponent } from './dmca.component';
-
-
+import { SharedModule } from "../../../../settings/shared/shared.module";
 
 @NgModule({
   declarations: [
     DmcaComponent
   ],
   imports: [
-    CommonModule
+    SharedModule
   ]
 })
 export class DmcaModule { }

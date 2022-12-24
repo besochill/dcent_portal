@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {UserService} from "../../../../settings/core/user/user.service";
 import {AuthService} from "../../../../settings/core/auth/auth.service";
 
@@ -8,12 +8,9 @@ import {AuthService} from "../../../../settings/core/auth/auth.service";
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
+
   constructor(private userService: UserService,
-              private authService: AuthService,) { }
-
-  ngOnInit() {}
-
-  profileEdit() {
-
-  }
+              private authService: AuthService,
+              private elementRef: ElementRef,
+  ) { }
 }

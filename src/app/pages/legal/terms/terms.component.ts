@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./terms.component.scss']
 })
 export class TermsComponent {
+  items: any[] = [];
+  expandedIndex = 0;
 
+  ngOnInit() {
+    this.items = [
+      {
+        title      : 'Terms',
+        description: 'Only a guide to protect everyone.',
+      }
+    ];
+  }
 }

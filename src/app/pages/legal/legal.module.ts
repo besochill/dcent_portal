@@ -9,6 +9,7 @@ import { GdprComponent } from "./gdpr/gdpr.component";
 import { MembershipComponent } from "./membership/membership.component";
 import { PrivacyComponent } from "./privacy/privacy.component";
 import { TermsComponent } from "./terms/terms.component";
+import {CdkAccordionModule} from "@angular/cdk/accordion";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TermsComponent } from "./terms/terms.component";
   ],
   imports: [
     SharedModule,
-    RouterModule.forChild(legalRouting)
+    RouterModule.forChild(legalRouting),
+    CdkAccordionModule
   ]
 })
 export class LegalModule { }

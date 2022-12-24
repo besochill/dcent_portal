@@ -1,0 +1,1026 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>portal documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/readthedocs.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">portal documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  LegalComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/legal/legal.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-legal</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./legal.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./legal.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_unsubscribeAll" >_unsubscribeAll</a>
+                            </li>
+                            <li>
+                                <a href="#drawer" >drawer</a>
+                            </li>
+                            <li>
+                                <a href="#drawerMode" >drawerMode</a>
+                            </li>
+                            <li>
+                                <a href="#drawerOpened" >drawerOpened</a>
+                            </li>
+                            <li>
+                                <a href="#panels" >panels</a>
+                            </li>
+                            <li>
+                                <a href="#selectedPanel" >selectedPanel</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getPanelInfo" >getPanelInfo</a>
+                            </li>
+                            <li>
+                                <a href="#goToPanel" >goToPanel</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#trackByFn" >trackByFn</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_changeDetectorRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/pages/legal/legal.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_changeDetectorRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPanelInfo"></a>
+                    <span class="name">
+                        <span ><b>getPanelInfo</b></span>
+                        <a href="#getPanelInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPanelInfo(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/pages/legal/legal.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToPanel"></a>
+                    <span class="name">
+                        <span ><b>goToPanel</b></span>
+                        <a href="#goToPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToPanel(panel: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/pages/legal/legal.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>panel</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/pages/legal/legal.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/pages/legal/legal.component.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trackByFn"></a>
+                    <span class="name">
+                        <span ><b>trackByFn</b></span>
+                        <a href="#trackByFn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>trackByFn(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, item: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/pages/legal/legal.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_unsubscribeAll"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_unsubscribeAll</b></span>
+                        <a href="#_unsubscribeAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/pages/legal/legal.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drawer"></a>
+                    <span class="name">
+                        <span ><b>drawer</b></span>
+                        <a href="#drawer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatDrawer</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;drawer&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/pages/legal/legal.component.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drawerMode"></a>
+                    <span class="name">
+                        <span ><b>drawerMode</b></span>
+                        <a href="#drawerMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>&quot;over&quot; | &quot;side&quot;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;side&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/pages/legal/legal.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drawerOpened"></a>
+                    <span class="name">
+                        <span ><b>drawerOpened</b></span>
+                        <a href="#drawerOpened"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/pages/legal/legal.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="panels"></a>
+                    <span class="name">
+                        <span ><b>panels</b></span>
+                        <a href="#panels"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/pages/legal/legal.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPanel"></a>
+                    <span class="name">
+                        <span ><b>selectedPanel</b></span>
+                        <a href="#selectedPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;terms&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/pages/legal/legal.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild} from &#x27;@angular/core&#x27;;
+import {MatDrawer} from &quot;@angular/material/sidenav&quot;;
+import {Subject} from &quot;rxjs&quot;;
+
+@Component({
+  selector: &#x27;app-legal&#x27;,
+  templateUrl: &#x27;./legal.component.html&#x27;,
+  styleUrls: [&#x27;./legal.component.scss&#x27;]
+})
+export class LegalComponent implements OnInit, OnDestroy {
+  @ViewChild(&#x27;drawer&#x27;) drawer!: MatDrawer;
+  drawerMode: &#x27;over&#x27; | &#x27;side&#x27; &#x3D; &#x27;side&#x27;;
+  drawerOpened: boolean &#x3D; true;
+  panels: any[] &#x3D; [];
+  selectedPanel: string &#x3D; &#x27;terms&#x27;;
+  private _unsubscribeAll: Subject&lt;any&gt; &#x3D; new Subject&lt;any&gt;();
+
+  constructor(private _changeDetectorRef: ChangeDetectorRef,) { }
+
+  ngOnInit() {
+    this.panels &#x3D; [
+      {
+        id         : &#x27;terms&#x27;,
+        icon       : &#x27;heroicons_outline:scale&#x27;,
+        title      : &#x27;Terms &amp; Conditions&#x27;,
+        description: &#x27;Only a guide to protect everyone.&#x27;,
+      },
+      {
+        id         : &#x27;privacy&#x27;,
+        icon       : &#x27;mat_outline:privacy_tip&#x27;,
+        title      : &#x27;Privacy Policy&#x27;,
+        description: &#x27;We help to protect your privacy.&#x27;,
+      },
+      {
+        id         : &#x27;membership&#x27;,
+        icon       : &#x27;mat_outline:card_membership&#x27;,
+        title      : &#x27;Membership Policy&#x27;,
+        description: &#x27;What we expect from you&#x27;
+      },
+      {
+        id         : &#x27;data&#x27;,
+        icon       : &#x27;heroicons_outline:database&#x27;,
+        title      : &#x27;Data Policy&#x27;,
+        description: &#x27;How we handle your data.&#x27;
+      },
+      {
+        id         : &#x27;gdpr&#x27;,
+        icon       : &#x27;mat_outline:phonelink_lock&#x27;,
+        title      : &#x27;GDPR&#x27;,
+        description: &#x27;How we handle your data under GDPR.&#x27;
+      },
+      {
+        id         : &#x27;dmca&#x27;,
+        icon       : &#x27;mat_outline:copyright&#x27;,
+        title      : &#x27;DMCA&#x27;,
+        description: &#x27;How we handle your data under DMCA.&#x27;
+      },
+    ];
+  }
+
+  ngOnDestroy(): void {
+    // Unsubscribe from all subscriptions
+    this._unsubscribeAll.next(null);
+    this._unsubscribeAll.complete();
+  }
+
+  goToPanel(panel: string): void
+  {
+    this.selectedPanel &#x3D; panel;
+
+    // Close the drawer on &#x27;over&#x27; mode
+    if ( this.drawerMode &#x3D;&#x3D;&#x3D; &#x27;over&#x27; )
+    {
+      this.drawer.close();
+    }
+  }
+
+  getPanelInfo(id: string): any {
+    return this.panels.find(panel &#x3D;&gt; panel.id &#x3D;&#x3D;&#x3D; id);
+  }
+
+  trackByFn(index: number, item: any): any {
+    return item.id || index;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;flex flex-col w-full min-w-0 sm:absolute sm:inset-0 sm:overflow-hidden&quot;&gt;
+  &lt;mat-sidenav-container class&#x3D;&quot;flex-auto sm:h-full&quot;&gt;
+    &lt;mat-sidenav-content&gt;
+      &lt;div class&#x3D;&quot;flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-12&quot;&gt;
+        &lt;div class&#x3D;&quot;flex items-center&quot;&gt;
+          &lt;!-- Drawer toggle --&gt;
+          &lt;button
+            class&#x3D;&quot;lg:hidden -ml-2&quot;
+            mat-icon-button
+            (click)&#x3D;&quot;drawer.toggle()&quot;&gt;
+            &lt;mat-icon [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:menu&#x27;&quot;&gt;&lt;/mat-icon&gt;
+          &lt;/button&gt;
+
+          &lt;!-- Panel title --&gt;
+          &lt;div class&#x3D;&quot;ml-2 lg:ml-0 text-3xl font-bold tracking-tight leading-none&quot;&gt;
+            {{getPanelInfo(selectedPanel).title}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;mt-8&quot;&gt;
+        &lt;ng-container [ngSwitch]&#x3D;&quot;selectedPanel&quot;&gt;
+          &lt;!-- Account --&gt;
+          &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;profile&#x27;&quot;&gt;
+            &lt;app-data&gt;&lt;/app-data&gt;
+          &lt;/ng-container&gt;
+          &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;personal&#x27;&quot;&gt;
+            &lt;app-dmca&gt;&lt;/app-dmca&gt;
+          &lt;/ng-container&gt;
+        &lt;/ng-container&gt;
+      &lt;/div&gt;
+    &lt;/mat-sidenav-content&gt;
+    &lt;mat-sidenav class&#x3D;&quot;sm:w-96 dark:bg-gray-900&quot; [autoFocus]&#x3D;&quot;false&quot; [mode]&#x3D;&quot;drawerMode&quot; [opened]&#x3D;&quot;drawerOpened&quot; #drawer&gt;
+      &lt;div class&#x3D;&quot;flex items-center justify-between m-8 mr-6 sm:my-10&quot;&gt;
+        &lt;!-- Title --&gt;
+        &lt;div class&#x3D;&quot;text-4xl font-extrabold tracking-tight leading-none&quot;&gt;Legal Documents&lt;/div&gt;
+        &lt;!-- Close button --&gt;
+        &lt;div class&#x3D;&quot;lg:hidden&quot;&gt;
+          &lt;button
+            mat-icon-button
+            (click)&#x3D;&quot;drawer.close()&quot;&gt;
+            &lt;mat-icon [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:x&#x27;&quot;&gt;&lt;/mat-icon&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;flex flex-col divide-y border-t border-b&quot;&gt;
+        &lt;ng-container *ngFor&#x3D;&quot;let panel of panels; trackBy: trackByFn&quot;&gt;
+          &lt;div
+            class&#x3D;&quot;flex px-8 py-5 cursor-pointer&quot;
+            [ngClass]&#x3D;&quot;{&#x27;hover:bg-gray-100 dark:hover:bg-hover&#x27;: !selectedPanel || selectedPanel !&#x3D;&#x3D; panel.id,
+                                    &#x27;bg-primary-50 dark:bg-hover&#x27;: selectedPanel &amp;&amp; selectedPanel &#x3D;&#x3D;&#x3D; panel.id}&quot;
+            (click)&#x3D;&quot;goToPanel(panel.id)&quot;&gt;
+            &lt;mat-icon
+              [ngClass]&#x3D;&quot;{&#x27;text-hint&#x27;: !selectedPanel || selectedPanel !&#x3D;&#x3D; panel.id,
+                                        &#x27;text-primary dark:text-primary-500&#x27;: selectedPanel &amp;&amp; selectedPanel &#x3D;&#x3D;&#x3D; panel.id}&quot;
+              [svgIcon]&#x3D;&quot;panel.icon&quot;&gt;&lt;/mat-icon&gt;
+            &lt;div class&#x3D;&quot;ml-3&quot;&gt;
+              &lt;div
+                class&#x3D;&quot;font-medium leading-6&quot;
+                [ngClass]&#x3D;&quot;{&#x27;text-primary dark:text-primary-500&#x27;: selectedPanel &amp;&amp; selectedPanel &#x3D;&#x3D;&#x3D; panel.id}&quot;&gt;
+                {{panel.title}}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;mt-0.5 text-secondary&quot;&gt;
+                {{panel.description}}
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/ng-container&gt;
+      &lt;/div&gt;
+    &lt;/mat-sidenav&gt;
+  &lt;/mat-sidenav-container&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./legal.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="flex flex-col w-full min-w-0 sm:absolute sm:inset-0 sm:overflow-hidden">  <mat-sidenav-container class="flex-auto sm:h-full">    <mat-sidenav-content>      <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-12">        <div class="flex items-center">          <!-- Drawer toggle -->          <button            class="lg:hidden -ml-2"            mat-icon-button            (click)="drawer.toggle()">            <mat-icon [svgIcon]="\'heroicons_outline:menu\'"></mat-icon>          </button>          <!-- Panel title -->          <div class="ml-2 lg:ml-0 text-3xl font-bold tracking-tight leading-none">            {{getPanelInfo(selectedPanel).title}}          </div>        </div>      </div>      <div class="mt-8">        <ng-container [ngSwitch]="selectedPanel">          <!-- Account -->          <ng-container *ngSwitchCase="\'profile\'">            <app-data></app-data>          </ng-container>          <ng-container *ngSwitchCase="\'personal\'">            <app-dmca></app-dmca>          </ng-container>        </ng-container>      </div>    </mat-sidenav-content>    <mat-sidenav class="sm:w-96 dark:bg-gray-900" [autoFocus]="false" [mode]="drawerMode" [opened]="drawerOpened" #drawer>      <div class="flex items-center justify-between m-8 mr-6 sm:my-10">        <!-- Title -->        <div class="text-4xl font-extrabold tracking-tight leading-none">Legal Documents</div>        <!-- Close button -->        <div class="lg:hidden">          <button            mat-icon-button            (click)="drawer.close()">            <mat-icon [svgIcon]="\'heroicons_outline:x\'"></mat-icon>          </button>        </div>      </div>      <div class="flex flex-col divide-y border-t border-b">        <ng-container *ngFor="let panel of panels; trackBy: trackByFn">          <div            class="flex px-8 py-5 cursor-pointer"            [ngClass]="{\'hover:bg-gray-100 dark:hover:bg-hover\': !selectedPanel || selectedPanel !== panel.id,                                    \'bg-primary-50 dark:bg-hover\': selectedPanel && selectedPanel === panel.id}"            (click)="goToPanel(panel.id)">            <mat-icon              [ngClass]="{\'text-hint\': !selectedPanel || selectedPanel !== panel.id,                                        \'text-primary dark:text-primary-500\': selectedPanel && selectedPanel === panel.id}"              [svgIcon]="panel.icon"></mat-icon>            <div class="ml-3">              <div                class="font-medium leading-6"                [ngClass]="{\'text-primary dark:text-primary-500\': selectedPanel && selectedPanel === panel.id}">                {{panel.title}}              </div>              <div class="mt-0.5 text-secondary">                {{panel.description}}              </div>            </div>          </div>        </ng-container>      </div>    </mat-sidenav>  </mat-sidenav-container></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CreatorComponent', 'selector': 'app-creator'},{'name': 'DataComponent', 'selector': 'app-data'},{'name': 'DmcaComponent', 'selector': 'app-dmca'},{'name': 'DocsComponent', 'selector': 'app-docs'},{'name': 'FaqsComponent', 'selector': 'help-center-faqs'},{'name': 'FeatureComponent', 'selector': 'app-feature'},{'name': 'ForgotComponent', 'selector': 'app-forgot'},{'name': 'GdprComponent', 'selector': 'app-gdpr'},{'name': 'HelpCenterGuidesCategoryComponent', 'selector': 'help-center-guides-category'},{'name': 'HelpCenterGuidesComponent', 'selector': 'help-center-guides'},{'name': 'HelpCenterGuidesGuideComponent', 'selector': 'help-center-guides-guide'},{'name': 'HelpCenterSupportComponent', 'selector': 'help-center-support'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LegalComponent', 'selector': 'app-legal'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MarketComponent', 'selector': 'app-market'},{'name': 'MembershipComponent', 'selector': 'app-membership'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PersonalSettingsComponent', 'selector': 'app-personal-settings'},{'name': 'PostsComponent', 'selector': 'app-posts'},{'name': 'PrivacyComponent', 'selector': 'app-privacy'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProfileSettingsComponent', 'selector': 'app-profile-settings'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ResetComponent', 'selector': 'app-reset'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SocialComponent', 'selector': 'app-social'},{'name': 'TermsComponent', 'selector': 'app-terms'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'},{'name': 'VendorComponent', 'selector': 'app-vendor'},{'name': 'VerifyComponent', 'selector': 'app-verify'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'LegalComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LegalComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

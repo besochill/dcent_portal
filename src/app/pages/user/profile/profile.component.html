@@ -1,6 +1,26 @@
-<div class="container flex flex-col flex-auto min-w-0">
+<div class="container flex flex-col flex-auto min-w-0 bg-gray-900">
   <div class="flex flex-col bg-card">
-    <div><img class="cover" src="assets/images/logo/bsocial_io.png" alt="Cover image"></div> <!-- Cover image -->
+    <div>
+      <video
+        id="my-video"
+        class="video-js"
+        preload="auto"
+        width="100%"
+        height="auto"
+        poster="assets/images/logo/bsocial_io.png"
+        data-setup="{}"
+      >
+        <source src="MY_VIDEO.mp4" type="video/mp4" />
+        <source src="MY_VIDEO.webm" type="video/webm" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+          >
+        </p>
+      </video>
+    </div> <!-- Cover image -->
     <div class="flex flex-col flex-0 lg:flex-row items-center max-w-5xl w-full mx-auto px-8 lg:h-18 bg-card"> <!-- User Information -->
       <div class="-mt-24 lg:-mt-26 rounded-full">
         <img class="w-32 h-32 rounded-full ring-4 ring-bg-card bg-gray-900" src="assets/images/logo/icon_w.png" alt="User avatar"> <!-- User avatar -->

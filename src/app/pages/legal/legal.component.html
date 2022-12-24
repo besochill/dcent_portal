@@ -20,10 +20,22 @@
       <div class="mt-8">
         <ng-container [ngSwitch]="selectedPanel">
           <!-- Account -->
-          <ng-container *ngSwitchCase="'profile'">
+          <ng-container *ngSwitchCase="'terms'">
+            <app-terms></app-terms>
+          </ng-container>
+          <ng-container *ngSwitchCase="'privacy'">
+            <app-privacy></app-privacy>
+          </ng-container>
+          <ng-container *ngSwitchCase="'membership'">
+            <app-membership></app-membership>
+          </ng-container>
+          <ng-container *ngSwitchCase="'data'">
             <app-data></app-data>
           </ng-container>
-          <ng-container *ngSwitchCase="'personal'">
+          <ng-container *ngSwitchCase="'gdpr'">
+            <app-gdpr></app-gdpr>
+          </ng-container>
+          <ng-container *ngSwitchCase="'dmca'">
             <app-dmca></app-dmca>
           </ng-container>
         </ng-container>
