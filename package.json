@@ -11,7 +11,7 @@
     "docker:build": "docker build -t dcenttech/besocial .",
     "docker:run": "docker run -d -it -p 8000:80/tcp --name besochill.net dcenttech/besocial:latest",
     "dev:ssr": "ng run portal:serve-ssr",
-    "serve:ssr": "node dist/portal/server/main.js",
+    "serve:ssr": "node portal/server/main.js",
     "build:ssr": "ng build && ng run portal:server",
     "prerender": "ng run portal:prerender"
   },
@@ -33,6 +33,7 @@
     "bootstrap": "^5.2.3",
     "express": "^4.15.2",
     "jquery": "^3.6.3",
+    "localstorage-polyfill": "^1.0.1",
     "rxjs": "~7.5.0",
     "simple-icons": "^8.1.0",
     "tslib": "^2.3.0",
