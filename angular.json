@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "client",
+            "outputPath": "dist/portal/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,7 +61,8 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js"
-            ]
+            ],
+            "webWorkerTsConfig": "tsconfig.worker.json"
           },
           "configurations": {
             "production": {
@@ -126,8 +127,63 @@
               "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "webWorkerTsConfig": "tsconfig.worker.json"
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/portal/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "portal:build:development",
+              "serverTarget": "portal:server:development"
+            },
+            "production": {
+              "browserTarget": "portal:build:production",
+              "serverTarget": "portal:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "portal:build:production",
+              "serverTarget": "portal:server:production"
+            },
+            "development": {
+              "browserTarget": "portal:build:development",
+              "serverTarget": "portal:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

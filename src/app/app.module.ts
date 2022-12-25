@@ -15,10 +15,12 @@ import { SidenavService } from "../settings/layout/assets/sidebar/sidebar.servic
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRouting),
+    RouterModule.forRoot(appRouting, {
+    initialNavigation: 'enabledBlocking'
+}),
     CoreModule.forRoot(),
     ThemeModule,
     LayoutModule,
